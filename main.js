@@ -1,0 +1,1 @@
+import { starships } from "./assets/starships"
