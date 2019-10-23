@@ -1,0 +1,72 @@
+import { starships } from "../assets/starships"
+import { films } from "../assets/films"
+import { people } from "../assets/people"
+
+let starfighterButton = document.createElement('button')
+starfighterButton.addEventListener('click', () => {
+    star
+
+})
+starfighterButton.textContent = "Starfighters"
+let otherShipsButton = document.createElement('button')
+otherShipsButton.addEventListener(('click', () => {
+
+})
+otherShips.textContent = "Other ships";
+
+
+const maleCharacters = people.filter(person => person.gender ==="male")
+console.log(maleCharacters)
+const femaleCharacters = people.filter(person => person.gender ==="female")
+console.log(femaleCharacters)
+
+console.log("Java running")
+// Can be seen in console on page
+let mainArea = document.querySelector("main");
+let mainHeader = document.querySelector("h1");
+
+films.forEach(function(film) {
+  let filmDiv = document.createElement("div");
+  let title = document.createElement("h1");
+  let crawl = document.createElement("p");
+
+  filmDiv.appendChild(title);
+  filmDiv.appendChild(crawl);
+
+  title.textContent = film.title;
+  crawl.innerText = film.opening_crawl;
+
+  mainArea.appendChild(filmDiv);
+});
+
+people.forEach(function(person) {
+    let personDiv = document.createElement('div')
+    let name = document.createElement('h1')
+    let gender = document.createElement('h3')
+    let pic = document.createElement('img')
+
+    personDiv.appendChild(name)
+    personDiv.appendChild(gender)
+    personDiv.appendChild(pic)
+
+    let charNum = getCharNumber(person.url)
+
+    name.textContent = person.name
+    gender.textContent = person.gender
+    pic.src="https://starwars-visualguide.com/assets/img/starships/15.jpg"
+
+    mainArea.appendChild(personDiv)
+})
+
+function getCharNumber(charURL) {
+  let end = charURL.lastIndexOf('/')
+  let charID = charURL.substring(end -2, end)
+  if(charID.indexOf('/') !== 1 ) {
+    return charID.slice(1,2)
+  }else {
+    return charID
+  }
+  }
+
+
+

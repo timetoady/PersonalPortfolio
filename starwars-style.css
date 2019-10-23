@@ -1,0 +1,50 @@
+html{
+    background: black;
+}
+
+h1{
+    color:#f9d71c
+}
+
+main{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+    grid-gap: 2rem;
+}
+
+header{
+    display: flex;
+
+}
+
+ul, p{
+    color: white;
+}
+
+.starshipDiv .starshipDesc{
+    opacity: 0;
+    color: white;
+    max-width: 400px;
+    font-size: 0.8rem;
+    object-fit: contain;
+    position: relative;
+    padding: 2rem;
+    background-color: rgba(17, 48, 223, 0.4);
+    margin-top: -7.8rem;
+    min-width: 520px;
+    height: 3.5rem;
+    transition: opacity .3s ease-in-out;
+    font-size: .8rem;
+    
+  } 
+
+ .starshipDiv:hover .starshipDesc{
+    opacity: 1;
+}
+
+button {
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    visibility: visible;
+}
