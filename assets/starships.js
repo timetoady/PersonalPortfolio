@@ -153,7 +153,7 @@ export const starships = [
         "created": "2014-12-12T11:19:05.340000Z",
         "edited": "2014-12-22T17:35:44.491233Z",
         "url": "https://swapi.co/api/starships/12/",
-        "description": "The in-con T65 X-Wing is the fighter that killed the Death Star. An almost perfect balance of speed, maneuverability and defensive shields makes this the fighter of choice for Rogue Squadron. In addition to four blaster canons, the X-Wing can carry a number of Proton Torpedoes. It’s powered by four fusial thrust engines, and requires an onboard astro-mech droid for peak performance."
+        "description": "The IN-CON T65 X-Wing is the fighter that killed the Death Star. An almost perfect balance of speed, maneuverability and defensive shields makes this the fighter of choice for Rogue Squadron. In addition to four blaster canons, the X-Wing can carry a number of Proton Torpedoes. It’s powered by four fusial thrust engines, and requires an onboard astro-mech droid for peak performance."
     },
     {
         "name": "TIE Advanced x1",
@@ -232,7 +232,7 @@ export const starships = [
         "created": "2014-12-15T13:04:47.235000Z",
         "edited": "2014-12-22T17:35:44.795405Z",
         "url": "https://swapi.co/api/starships/22/",
-        "description": "The Landaclash shuttle was designed to swiftly transport Imperial personnel and cargo between star ships and various installations across the galaxy. Sianard Fleetsystems built the shuttles to carry up to twenty passengers in relative safety, protected by standard reinforced hull plating and multiple shield generators. The Landaclash is also armed with several laser canons, and equipped with a hyperdrive for travel between fleets and systems."
+        "description": "The Landa-class shuttle was designed to swiftly transport Imperial personnel and cargo between star ships and various installations across the galaxy. Sianard Fleetsystems built the shuttles to carry up to twenty passengers in relative safety, protected by standard reinforced hull plating and multiple shield generators. The Landaclash is also armed with several laser canons, and equipped with a hyperdrive for travel between fleets and systems."
     },
     {
         "name": "EF76 Nebulon-B escort frigate",

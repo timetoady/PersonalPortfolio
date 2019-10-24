@@ -46,7 +46,8 @@ starships.forEach(function(starship) {
     }
   }
   
-  const starFighter = starships.filter(starship => starship.starship_class === "starfighter" || "Starfighter" || "assault starfighter")
+  const starFighter = starships.filter(starship => starship.starship_class === "starfighter")
+  const shipSort = starships.filter(starship => starship.description === length > 6)
   console.log(starFighter)
   // const femaleCharacters = people.filter(person => person.gender ==="female")
   // console.log(femaleCharacters)
