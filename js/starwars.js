@@ -26,11 +26,13 @@ starships.forEach(function(starship) {
   model.innerText = starship.model;
   pic.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`;
   pic.alt = "Starships";
-  pic.onerror ="this.onerror=null;this.src='https://starwars-visualguide.com/assets/img/placeholder.jpg'";
   starshipDesc.textContent = starship.description;
 
   mainArea.appendChild(starshipDiv);
+
+  
 });
+
 
 function getShipNumber(shipURL) {
   let end = shipURL.lastIndexOf("/");
@@ -48,6 +50,8 @@ const starFighter = starships.filter(
 const shipSort = starships.filter(
   starship => starship.description === length > 6
 );
+
+const allDivs= Array.from(mainArea.querySelectorAll("div"))
 
 
 
