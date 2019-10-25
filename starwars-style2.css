@@ -128,7 +128,7 @@ main{
   height: 100%;
   padding: 4rem;
   margin-bottom: 10%;
-  margin-left: -.5rem;
+  /* margin-left: -.5rem; */
   text-align: center;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
