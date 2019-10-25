@@ -5,7 +5,7 @@ body{
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(1220px, 1fr));
-  grid-gap: 2rem;
+  grid-gap: 7rem;
   object-fit: cover;
   flex-direction: row;
   align-items: center;
@@ -63,9 +63,10 @@ p {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 30%;
+  width: 32%;
   height: 600px;
-  margin-bottom: 13rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -109,4 +110,21 @@ h2{
   -moz-transform:rotateY(180deg);
   -o-transform:rotateY(180deg);
   -ms-transform:rotateY(180deg);
+  font-size: 1.2rem;
 }
+
+@media (max-width: 600px ) {
+ h2{
+   font-size: 0.8rem;
+ }
+main{
+  grid-gap: 3rem;
+}
+ 
+}
+
+@media (max-width: 1500px ) {
+  h2{
+    font-size: 0.9rem;
+  }
+ }
