@@ -1,0 +1,58 @@
+html {
+  background: black;
+}
+
+h1 {
+  color: #f9d71c;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+  grid-gap: 2rem;
+  object-fit: cover;
+}
+
+header {
+  display: flex;
+}
+
+ul,
+p {
+  color: white;
+}
+
+.starshipDiv .starshipDesc {
+  opacity: 0;
+  color: white;
+  font-size: 0.8rem;
+  object-fit: contain;
+  position: relative;
+  padding: 1rem;
+  background-color: rgba(17, 48, 223, 0.4);
+  margin-top: -6.7rem;
+  max-width: 94%;
+  height: 4.4rem;
+  transition: opacity 0.3s ease-in-out;
+  font-size: 0.8rem;
+  object-fit: cover;
+}
+
+.starshipDiv:hover .starshipDesc {
+  opacity: 1;
+}
+.starshipDiv img {
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+.starshipDiv {
+  width: 600px;
+}
+
+button {
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  visibility: visible;
+}
