@@ -7,7 +7,11 @@ import { starships } from "../assets/starships.js";
 let mainArea = document.querySelector("main");
 let mainHeader = document.querySelector("h1");
 
-starships.forEach(function(starship) {
+const shipSort = starships.filter(
+  starship => starship.hasOwnProperty('description')
+);
+console.log(shipSort)
+shipSort.forEach(function(starship) {
   let starshipDiv = document.createElement("div");
   let name = document.createElement("h1");
   let model = document.createElement("p");
@@ -47,9 +51,7 @@ function getShipNumber(shipURL) {
 const starFighter = starships.filter(
   starship => starship.starship_class === "starfighter"
 );
-const shipSort = starships.filter(
-  starship => starship.description === length > 6
-);
+
 
 const allDivs= Array.from(mainArea.querySelectorAll("div"))
 

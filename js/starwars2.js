@@ -7,6 +7,8 @@ import { films } from "../assets/films.js";
 let mainArea = document.querySelector("main");
 let mainHeader = document.querySelector("h1");
 
+
+
 films.forEach(function(film) {
   let filmsDiv = document.createElement("div");
   let flipCard = document.createElement("div")
@@ -53,3 +55,4 @@ function getFilmNumber(filmURL) {
 }
 
 console.log("Hey yoooo!")
+
