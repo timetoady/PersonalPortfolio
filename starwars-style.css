@@ -16,6 +16,9 @@ main {
 header {
   display: flex;
 }
+.topTitle{
+  font-size: 4rem;
+}
 
 ul,
 p {

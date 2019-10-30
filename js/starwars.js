@@ -1,7 +1,6 @@
 import { starships } from "../assets/starships.js";
 
-//To do: 1. filter so only shows starfighters. 2. Show other stats when hover over individual image.
-//Use otherstats.appendChild() and hover function.
+//To do: 1. filter so only shows starfighters. 
 
 // Can be seen in console on page
 let mainArea = document.querySelector("main");
@@ -10,7 +9,7 @@ let mainHeader = document.querySelector("h1");
 const shipSort = starships.filter(
   starship => starship.hasOwnProperty('description')
 );
-console.log(shipSort)
+
 shipSort.forEach(function(starship) {
   let starshipDiv = document.createElement("div");
   let name = document.createElement("h1");
@@ -26,6 +25,7 @@ shipSort.forEach(function(starship) {
   starshipDiv.appendChild(starshipDesc);
   let shipNum = getShipNumber(starship.url);
   mainHeader.textContent = "Starships";
+  mainHeader.setAttribute('class', 'topTitle')
   name.textContent = starship.name;
   model.innerText = starship.model;
   pic.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`;
@@ -55,7 +55,3 @@ const starFighter = starships.filter(
 
 const allDivs= Array.from(mainArea.querySelectorAll("div"))
 
-
-
-// const femaleCharacters = people.filter(person => person.gender ==="female")
-// console.log(femaleCharacters)
