@@ -5,10 +5,33 @@ import { starships } from "../assets/starships.js";
 // Can be seen in console on page
 let mainArea = document.querySelector("main");
 let mainHeader = document.querySelector("h1");
-
+const starFighter = starships.filter(
+  starship => starship.starship_class === "starfighter"
+);
+const otherShips = starships.filter(
+  starship => starship.starship_class !== "starfighter"
+);
+const rebels = starships.filter(
+  starship => starship.affiliation === "Rebel Alliance"
+);
+const empire = starships.filter(
+  starship => starship.affiliation === "Galactic Empire"
+);
 const shipSort = starships.filter(
   starship => starship.hasOwnProperty('description')
 );
+const allDivs= Array.from(mainArea.querySelectorAll("div"))
+let starfighterButton = document.createElement('button')
+starfighterButton.textContent = "Starfighters"
+starfighterButton.addEventListener('click', () => {
+  otherShips.forEach(elt => {
+    let matchedDiv = allDivs.filter(element => {
+      return element.firstChild.textContent === elt.name
+  })
+  
+  })
+    
+})
 
 shipSort.forEach(function(starship) {
   let starshipDiv = document.createElement("div");
@@ -48,10 +71,8 @@ function getShipNumber(shipURL) {
   }
 }
 
-const starFighter = starships.filter(
-  starship => starship.starship_class === "starfighter"
-);
 
 
-const allDivs= Array.from(mainArea.querySelectorAll("div"))
+
+
 

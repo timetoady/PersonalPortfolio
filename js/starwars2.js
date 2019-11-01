@@ -54,5 +54,3 @@ function getFilmNumber(filmURL) {
   }
 }
 
-console.log("Hey yoooo!")
-

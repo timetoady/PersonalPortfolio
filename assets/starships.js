@@ -21,6 +21,7 @@ export const starships = [
         "created": "2014-12-15T12:31:42.547000Z",
         "edited": "2017-04-19T10:56:06.685592Z",
         "url": "https://swapi.co/api/starships/15/",
+        "affiliation" : "Galactic Empire",
         "description": "One of the largest and most powerful Imperial vessels ever created, the Executor was 19,000 meters long, eclipsing its escorting Imperial-class Star Destroyers, and boasted more than 5,000 turbolasers and ion cannons."
     },
     {
@@ -44,6 +45,7 @@ export const starships = [
         "created": "2014-12-10T15:48:00.586000Z",
         "edited": "2014-12-22T17:35:44.431407Z",
         "url": "https://swapi.co/api/starships/5/",
+        "affiliation" : "Galactic Empire",
         "description": "The Sentinel-class landing craft, also known as the Sentinel-class shuttle, was a transport used primarily by the Galactic Empire to carry troops, small vehicles, and supplies."
     },
     {
@@ -67,6 +69,7 @@ export const starships = [
         "created": "2014-12-10T16:36:50.509000Z",
         "edited": "2014-12-22T17:35:44.452589Z",
         "url": "https://swapi.co/api/starships/9/",
+        "affiliation" : "Galactic Empire",
         "description": "A moon-sized Imperial military battlestation armed with a planet-destroying superlaser. The Death Stars, whose concept had been explored even before the Clone Wars, were the first in a long series of superweapons developed to execute the Tarkin Doctrine."
     },
     {
@@ -98,6 +101,7 @@ export const starships = [
         "created": "2014-12-10T16:59:45.094000Z",
         "edited": "2014-12-22T17:35:44.464156Z",
         "url": "https://swapi.co/api/starships/10/",
+        "affiliation" : "Rebel Alliance",
         "description": "An illegally modified Corellian engineered YT-1300 Transport, the Millennium Falcon is one of the most formidable star ships in the galaxy. Owned and piloted by Hans Solo and his wookie partner Chewbacka, the Falcon supports a top of the line imperial deflector shield system, two quad-laser canons, and two concussion missile launchers, along with a retractable light laser canon. The star ship is also equipped with an incredible Class .5 Hyperdrive system."
     },
     {
@@ -123,6 +127,7 @@ export const starships = [
         "created": "2014-12-12T11:00:39.817000Z",
         "edited": "2014-12-22T17:35:44.479706Z",
         "url": "https://swapi.co/api/starships/11/",
+        "affiliation" : "Rebel Alliance",
         "description": "The Y-Wing is the work horse of the rebel fleet. The armor on this ship is extensive, and the shields will protect you from just about anything, which is good, because you won’t be going anywhere fast. The Y-Wing is used mainly as a bomber because it can carry a heavy payload of missiles, torpedoes and bombs. The other important weapon is the topside ION canon, which rather than destroying a target, can disable it for later capture."
     },
     {
@@ -153,6 +158,7 @@ export const starships = [
         "created": "2014-12-12T11:19:05.340000Z",
         "edited": "2014-12-22T17:35:44.491233Z",
         "url": "https://swapi.co/api/starships/12/",
+        "affiliation" : "Rebel Alliance",
         "description": "The IN-CON T65 X-Wing is the fighter that killed the Death Star. An almost perfect balance of speed, maneuverability and defensive shields makes this the fighter of choice for Rogue Squadron. In addition to four blaster canons, the X-Wing can carry a number of Proton Torpedoes. It’s powered by four fusial thrust engines, and requires an onboard astro-mech droid for peak performance."
     },
     {
@@ -178,6 +184,7 @@ export const starships = [
         "created": "2014-12-12T11:21:32.991000Z",
         "edited": "2014-12-22T17:35:44.549047Z",
         "url": "https://swapi.co/api/starships/13/",
+        "affiliation" : "Galactic Empire",
         "description": "The prototype star fighter used by Darth Vader at the battle of Yavin, and the basis for the frighteningly efficient TIE Interceptor, the TIE advanced X1 is easily recognizable due to its distinctive bent wings. Unlike all other TIE fighters, the prototype is equipped with a deflector shield generator, and a modest hyperdrive system. The TIE Advanced is armed with fixed twin heavy blaster canons, but has no life support systems."
     },
     {
@@ -204,6 +211,7 @@ export const starships = [
         "created": "2014-12-15T13:00:56.332000Z",
         "edited": "2014-12-22T17:35:44.716273Z",
         "url": "https://swapi.co/api/starships/21/",
+        "affiliation" : "Other",
         "description" : "Slave I was a modified Firespray-31-class patrol and attack craft used by the infamous bounty hunter Jango Fett before the Clone Wars and later his unaltered cloned 'son' Boba Fett just prior to the Fall of the Republic and during the reign of the Galactic Empire."
     },
     {
@@ -232,6 +240,7 @@ export const starships = [
         "created": "2014-12-15T13:04:47.235000Z",
         "edited": "2014-12-22T17:35:44.795405Z",
         "url": "https://swapi.co/api/starships/22/",
+        "affiliation" : "Galactic Empire",
         "description": "The Landa-class shuttle was designed to swiftly transport Imperial personnel and cargo between star ships and various installations across the galaxy. Sianard Fleetsystems built the shuttles to carry up to twenty passengers in relative safety, protected by standard reinforced hull plating and multiple shield generators. The Landaclash is also armed with several laser canons, and equipped with a hyperdrive for travel between fleets and systems."
     },
     {
@@ -256,6 +265,7 @@ export const starships = [
         "created": "2014-12-15T13:06:30.813000Z",
         "edited": "2014-12-22T17:35:44.848329Z",
         "url": "https://swapi.co/api/starships/23/",
+        "affiliation" : "Galactic Empire",
         "description": "The EF76 Nebulon-B escort frigate was a 300-meter-long warship that was built by Kuat Drive Yards for use by the Imperial Navy, to protect convoys from Rebel Alliance starfighter actions. It was, however, used more famously by the Rebellion."
     },
     {
@@ -279,6 +289,7 @@ export const starships = [
         "created": "2014-12-18T10:54:57.804000Z",
         "edited": "2014-12-22T17:35:44.957852Z",
         "url": "https://swapi.co/api/starships/27/",
+        "affiliation" : "Rebel Alliance",
         "description": "The Mc80 Liberty Type Star cruiser is the spearhead of the Rebel alliance's fleet, and it boasts some of the heaviest firepower in the Rebel arsenal. Its impressive firepower and powerful forward shielding, demand that it is often among the first ships considered to lead Rebel strike forces into combat."
     },
     {
@@ -304,6 +315,7 @@ export const starships = [
         "created": "2014-12-18T11:16:34.542000Z",
         "edited": "2014-12-22T17:35:44.978754Z",
         "url": "https://swapi.co/api/starships/28/",
+        "affiliation" : "Rebel Alliance",
         "description": "The A-Wing is the fastest fighter in the Rebel Alliance, capable of matching a TIE interceptor in speed. Twin J77 Event-Horrizon engines power the craft, and twin blaster canons provide offensive weaponry. However, what we gain in speed, we lose in defense. The deflector shield capability is significantly less than the X-Wing. So make sure you use your speed to dodge lasers, rather than relying on shields. The A-Wing also carries a limited number Missiles."
     },
     {
@@ -327,6 +339,7 @@ export const starships = [
         "created": "2014-12-18T11:18:04.763000Z",
         "edited": "2014-12-22T17:35:45.011193Z",
         "url": "https://swapi.co/api/starships/29/",
+        "affiliation" : "Rebel Alliance",
         "description" : "One of the rebellions most well armed star fighters, the B-Wing, has been personally designed by Admiral Akbar. The B-Wing supports an array of weapons including ION canons, Proton Torpedo launchers and laser canons. Because the cockpit is surrounded by a unique giro-stabilization system, the pilot always remains stationary, even as the rest of the ship rotates during flight."
     },
     {
@@ -350,6 +363,7 @@ export const starships = [
         "created": "2014-12-19T17:01:31.488000Z",
         "edited": "2014-12-22T17:35:45.027308Z",
         "url": "https://swapi.co/api/starships/31/",
+        "affiliation" : "Other",
         "description": "The Consular-class space cruiser was a starship designed and manufactured by the Corellian Engineering Corporation and used by the Galactic Republic to transport Jedi and diplomats to troubled spots across the galaxy. ... During the Clone Wars, these cruisers were painted the same colors as Republic attack cruisers."
     },
     {
@@ -378,6 +392,7 @@ export const starships = [
         "created": "2014-12-19T17:39:17.582000Z",
         "edited": "2014-12-22T17:35:45.079452Z",
         "url": "https://swapi.co/api/starships/39/",
+        "affiliation" : "Other",
         "description": "The fast agile starfighters used by the Naboo spacefighter core, the N1, is armed with twin laser canons, and a full compliment of proton torpedoes. However, the vehicle is reserved for routine patrols and escorting the Queen’s starship to other worlds. Designed by Naboo engineers, the N1 incorporates many newly components, including a Monarch C4 Hyperdrive. The starfighter also utilizes a standard astro-mech droid to assist with navigation and in-flight repairs."
     },
     {
@@ -403,6 +418,7 @@ export const starships = [
         "created": "2014-12-19T17:45:03.506000Z",
         "edited": "2014-12-22T17:35:45.091925Z",
         "url": "https://swapi.co/api/starships/40/",
+        "affiliation" : "Other",
         "description": "The J-type 327 Nubian Royal Starship (also known as the Naboo Royal Starship) was a starship used by Queen Amidala, Jedi Master Qui-Gon Jinn and his Padawan, Obi-Wan Kenobi, during the Invasion of Naboo. It was commissioned by the Theed Palace Space Vessel Engineering Corps."
     },
     {
@@ -428,6 +444,7 @@ export const starships = [
         "created": "2014-12-20T09:39:56.116000Z",
         "edited": "2014-12-22T17:35:45.105522Z",
         "url": "https://swapi.co/api/starships/41/",
+        "affiliation" : "Galactic Empire",
         "description": "The Scimitar, also known as the Sith Infiltrator, was a Star Courier that was modified for use by the Sith apprentice Darth Maul. After his defeat at the hands of Obi-Wan Kenobi on Naboo, it fell into the hands of Darth Sidious and was later used by several individuals, including Sidious himself."
     },
     {
@@ -451,6 +468,7 @@ export const starships = [
         "created": "2014-12-20T11:05:51.237000Z",
         "edited": "2014-12-22T17:35:45.124386Z",
         "url": "https://swapi.co/api/starships/43/",
+        "affiliation" : "Other",
         "description": "The J-type diplomatic barge was a starship used by the royalty of Naboo for diplomatic transport. Designed by the Theed Palace Space Vessel Engineering Corps, the craft succeeded the J-type 327 Nubian royal starship as primary transport for Naboo's queen and royal entourage."
     },
     {
@@ -474,6 +492,7 @@ export const starships = [
         "created": "2014-12-20T17:24:23.509000Z",
         "edited": "2014-12-22T17:35:45.135987Z",
         "url": "https://swapi.co/api/starships/47/",
+        "affiliation" : "Other",
         "description": "The AA-9 Freighter-Liner, also referred to as the AA-9 Coruscant freighter, was a freighter manufactured by Botajef Shipyards that could reach speeds of 420 kilometers per hour and was 390 meters in length. It had a passenger capacity of 30,000 and had over three months worth of emergency consumables onboard."
     },
     {
@@ -501,6 +520,7 @@ export const starships = [
         "created": "2014-12-20T17:35:23.906000Z",
         "edited": "2014-12-22T17:35:45.147746Z",
         "url": "https://swapi.co/api/starships/48/",
+        "affiliation" : "Other",
         "description": "Manufactured by Kuat Systems Engineering, the Delta-7 Aethersprite-class light interceptor was a Jedi-used starfighter that saw extensive action during the last years of the Galactic Republic, and was designed specifically with the Jedi in mind."
     },
     {
