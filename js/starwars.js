@@ -33,18 +33,18 @@ starfighterButton.textContent = "Starfighters";
 starfighterButton.hasAttribute("id", "sfButton");
 topHeader.appendChild(starfighterButton);
 
-starfighterButton.addEventListener("click", () => {
-  if (starfighterButton.textContent === "Starfighters") {
-    starfighterButton.textContent = "All Ships";
-  } else {
-    starfighterButton.textContent = "Starfighters";
-  }
-});
-
 function toggler() {
+  starfighterButton.addEventListener("click", () => {
+    if (starfighterButton.textContent === "Starfighters") {
+      starfighterButton.textContent = "All Ships";
+      starfighterButton.innerHTML = "All Ships";
+    } else {
+      starfighterButton.textContent = "Starfighters";
+    }
+  });
   if (
     (
-      document.documentElement.textContent || document.documentElement.innerText
+      starfighterButton.textContent || starfighterButton.innerText
     ).indexOf("All Ships") > -1
   ) {
     return starfightSort;
