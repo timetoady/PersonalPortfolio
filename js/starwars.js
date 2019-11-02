@@ -1,9 +1,10 @@
 import { starships } from "../assets/starships.js";
 
-//To do: 1. filter so only shows starfighters. 
+//To do: 1. filter so only shows starfighters.
 
 // Can be seen in console on page
 let mainArea = document.querySelector("main");
+let topHeader = document.querySelector("header");
 let mainHeader = document.querySelector("h1");
 const starFighter = starships.filter(
   starship => starship.starship_class === "starfighter"
@@ -17,23 +18,43 @@ const rebels = starships.filter(
 const empire = starships.filter(
   starship => starship.affiliation === "Galactic Empire"
 );
-const shipSort = starships.filter(
-  starship => starship.hasOwnProperty('description')
+const shipSort = starships.filter(starship =>
+  starship.hasOwnProperty("description")
 );
-const allDivs= Array.from(mainArea.querySelectorAll("div"))
-let starfighterButton = document.createElement('button')
-starfighterButton.textContent = "Starfighters"
-starfighterButton.addEventListener('click', () => {
-  otherShips.forEach(elt => {
-    let matchedDiv = allDivs.filter(element => {
-      return element.firstChild.textContent === elt.name
-  })
-  
-  })
-    
-})
 
-shipSort.forEach(function(starship) {
+const starfightSort = shipSort.filter(
+  starship => starship.starship_class === "starfighter"
+);
+
+const allDivs = Array.from(mainArea.querySelectorAll("div"));
+
+let starfighterButton = document.createElement("button");
+starfighterButton.textContent = "Starfighters";
+starfighterButton.hasAttribute("id", "sfButton");
+topHeader.appendChild(starfighterButton);
+
+starfighterButton.addEventListener("click", () => {
+  if (starfighterButton.textContent === "Starfighters") {
+    starfighterButton.textContent = "All Ships";
+  } else {
+    starfighterButton.textContent = "Starfighters";
+  }
+});
+
+function toggler() {
+  if (
+    (
+      document.documentElement.textContent || document.documentElement.innerText
+    ).indexOf("All Ships") > -1
+  ) {
+    return starfightSort;
+  } else {
+    return shipSort;
+  }
+}
+var check1 = toggler();
+
+check1.forEach(function(starship) {
   let starshipDiv = document.createElement("div");
   let name = document.createElement("h1");
   let model = document.createElement("p");
@@ -48,18 +69,14 @@ shipSort.forEach(function(starship) {
   starshipDiv.appendChild(starshipDesc);
   let shipNum = getShipNumber(starship.url);
   mainHeader.textContent = "Starships";
-  mainHeader.setAttribute('class', 'topTitle')
+  mainHeader.setAttribute("class", "topTitle");
   name.textContent = starship.name;
   model.innerText = starship.model;
   pic.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`;
   pic.alt = "Starships";
   starshipDesc.textContent = starship.description;
-
   mainArea.appendChild(starshipDiv);
-
-  
 });
-
 
 function getShipNumber(shipURL) {
   let end = shipURL.lastIndexOf("/");
@@ -70,9 +87,3 @@ function getShipNumber(shipURL) {
     return shipID;
   }
 }
-
-
-
-
-
-
