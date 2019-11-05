@@ -29,7 +29,7 @@ async function getAPIData(url) {
 
       //pokeDiv.setAttribute('class', 'charDivs')
       //pic.setAttribute('class', 'images')
-
+      //cardBackStuff(pokeBack, single_pokemon)
       let pokeNum = getPokeNumber(single_pokemon.id)
       name.textContent = single_pokemon.name
       pic.src = `..images/${pokeNum}.png`
@@ -47,3 +47,8 @@ async function getAPIData(url) {
         return `0${id}`
     } else return id
 }
+
+// function cardBackStuff(pokeback){
+//   let pokeOrder = document.createElement('p').textContent = pokeBack.pokeOrder
+//   pokeBack.appendChild(pokeOrder)
+// }

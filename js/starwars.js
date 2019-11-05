@@ -6,6 +6,7 @@ import { starships } from "../assets/starships.js";
 let mainArea = document.querySelector("main");
 let topHeader = document.querySelector("header");
 let mainHeader = document.querySelector("h1");
+
 const starFighter = starships.filter(
   starship => starship.starship_class === "starfighter"
 );
@@ -38,23 +39,21 @@ function toggler() {
     if (starfighterButton.textContent === "Starfighters") {
       starfighterButton.textContent = "All Ships";
       starfighterButton.innerHTML = "All Ships";
+      showShips(starfightSort)
     } else {
       starfighterButton.textContent = "Starfighters";
+      showShips(shipSort)
     }
   });
-  if (
-    (
-      starfighterButton.textContent || starfighterButton.innerText
-    ).indexOf("All Ships") > -1
-  ) {
-    return starfightSort;
-  } else {
-    return shipSort;
-  }
 }
+
 var check1 = toggler();
 
-check1.forEach(function(starship) {
+function showShips(sorter) {
+while (mainArea.firstChild) {
+  mainArea.removeChild(mainArea.firstChild);
+}
+sorter.forEach(function(starship) {
   let starshipDiv = document.createElement("div");
   let name = document.createElement("h1");
   let model = document.createElement("p");
@@ -77,6 +76,7 @@ check1.forEach(function(starship) {
   starshipDesc.textContent = starship.description;
   mainArea.appendChild(starshipDiv);
 });
+}
 
 function getShipNumber(shipURL) {
   let end = shipURL.lastIndexOf("/");
