@@ -1,7 +1,5 @@
 import { starships } from "../assets/starships.js";
 
-//To do: 1. filter so only shows starfighters.
-
 // Can be seen in console on page
 let mainArea = document.querySelector("main");
 let topHeader = document.querySelector("header");
@@ -30,19 +28,19 @@ const starfightSort = shipSort.filter(
 const allDivs = Array.from(mainArea.querySelectorAll("div"));
 
 let starfighterButton = document.createElement("button");
-starfighterButton.textContent = "Starfighters";
+starfighterButton.textContent = "All Ships";
 starfighterButton.hasAttribute("id", "sfButton");
 topHeader.appendChild(starfighterButton);
 
 function toggler() {
   starfighterButton.addEventListener("click", () => {
-    if (starfighterButton.textContent === "Starfighters") {
-      starfighterButton.textContent = "All Ships";
-      starfighterButton.innerHTML = "All Ships";
-      showShips(starfightSort)
-    } else {
+    if (starfighterButton.textContent === "All Ships") {
       starfighterButton.textContent = "Starfighters";
+      starfighterButton.innerHTML = "Starfighters";
       showShips(shipSort)
+    } else {
+      starfighterButton.textContent = "All Ships";
+      showShips(starfightSort)
     }
   });
 }
@@ -66,6 +64,11 @@ function toggler2() {
 }
 
 var rebsOrEmpire = toggler2();
+
+let prompt = document.createElement('p')
+prompt.textContent = "Select a button to sort your ships!"
+prompt.setAttribute('class', 'promptClass')
+mainHeader.appendChild(prompt);
 
 function showShips(sorter) {
 while (mainArea.firstChild) {

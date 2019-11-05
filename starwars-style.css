@@ -6,6 +6,10 @@ h1 {
   color: #f9d71c;
 }
 
+#introTitle {
+  font-size: 6rem;
+}
+
 main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
@@ -20,6 +24,10 @@ header {
   font-size: 4rem;
 }
 
+.promptClass {
+  font-size: 3rem;
+}
+
 ul,
 p {
   color: white;
@@ -31,9 +39,9 @@ p {
   font-size: 0.8rem;
   object-fit: contain;
   position: relative;
-  padding: 1rem;
+  padding: 1rem 1rem 1.24rem 1rem;
   background-color: rgba(17, 48, 223, 0.4);
-  margin-top: -6.7rem;
+  margin-top: -7rem;
   max-width: 94%;
   height: 4.4rem;
   transition: opacity 0.3s ease-in-out;
@@ -57,6 +65,7 @@ button {
   padding: 1rem;
   font-size: 1.5rem;
   border-radius: 1rem;
+  margin-right: 1rem;
   visibility: visible;
   background-color: black;
   color: yellow;
