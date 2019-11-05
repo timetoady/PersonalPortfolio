@@ -47,7 +47,25 @@ function toggler() {
   });
 }
 
-var check1 = toggler();
+var theStarfighters = toggler();
+
+let affiliationButton= document.createElement("button");
+affiliationButton.textContent = "Rebels";
+topHeader.appendChild(affiliationButton);
+
+function toggler2() {
+  affiliationButton.addEventListener("click", () => {
+    if (affiliationButton.textContent === "Rebels") {
+      affiliationButton.textContent = "Imperials";
+      showShips(rebels)
+    } else {
+      affiliationButton.textContent = "Rebels";
+      showShips(empire)
+    }
+  });
+}
+
+var rebsOrEmpire = toggler2();
 
 function showShips(sorter) {
 while (mainArea.firstChild) {
