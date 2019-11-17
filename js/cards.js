@@ -1,3 +1,18 @@
+//Adding a class to cookie cutter objects in
+
+// class Pokemon {
+//   constructor(id, name, stats) {
+//     this.id = id;
+//     this.name = name;
+//     this.base_stats = stats;
+//   }}
+
+// const Newkemon = new Pokemon(999, 'Ademna', 130);
+
+
+// console.log(square.area); // 100
+
+
 async function getAPIData(url) {
     try{
       const response = await fetch(url)
@@ -20,7 +35,6 @@ async function getAPIData(url) {
         })
     }
   })
-  console.log(theData)
 
   function populateDOM(single_pokemon) {
       let pokeDiv = document.createElement("div")
@@ -52,3 +66,4 @@ async function getAPIData(url) {
 //   let pokeOrder = document.createElement('p').textContent = pokeBack.pokeOrder
 //   pokeBack.appendChild(pokeOrder)
 // }
+
