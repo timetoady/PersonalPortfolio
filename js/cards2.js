@@ -1,22 +1,28 @@
-async function getAPIData(url) {
-    try{
-      const response = await fetch(url)
-      const data = await response.json()
-      return data
-    } catch(error) {
-      console.error(error)
-    }
+//https://api.jikan.moe/v3/anime/{id}/{request}/{parameter}
+
+var request = new XMLHttpRequest();
+
+request.open('GET', 'https://api.jikan.moe/v3/anime/5114');
+
+request.onreadystatechange = function () {
+  if (this.readyState === 4) {
+    console.log('Status:', this.status);
+    console.log('Headers:', this.getAllResponseHeaders());
+    console.log('Body:', this.responseText);
   }
+};
 
-  let mainArea = document.querySelector("main");
-  let mainHeader = document.querySelector("h1");
+request.send();
+console.log(request)
 
-  const theData = getAPIData('https://pokeapi.co/api/v2/pokemon/')
-  .then(data => {
-    for ( const pokemon of data.results){
-        getAPIData(pokemon.url)
-        .then(pokedata => {
-            populateDOM(pokedata)
-        })
-    }
-  })
+let mainArea = document.querySelector("main");
+let mainHeader = document.querySelector("h1");
+
+let testDiv = document.createElement("div")
+let testTitle = document.createElement("h1")
+let pic = document.createElement('img')
+
+testTitle.textContent = "stuff"
+
+mainArea.appendChild(testDiv)
+testDiv.appendChild(testTitle)
