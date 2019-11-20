@@ -18,6 +18,10 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+.title {
+  font-size: 4rem;
+}
+
 .wrapper {
   max-width: 1900px;
   margin: 0 auto;
@@ -75,11 +79,12 @@ p {
 
 
 button{
-  width: 150px;
+  width: 250px;
   height: 80px;
   background-color: burlywood;
   font-size: 1.5rem;
   margin: 20px;
+  border-radius: 1rem;
 }
 
 .front_image {
@@ -90,4 +95,16 @@ button{
 
 .customStats {
   line-height: 20px;
+}
+
+@media (max-width: 28.75em) {
+  h1{
+    font-size: 2rem !important;
+  }
+  .wrapper{
+    align-items: center;
+    margin: 0px;
+    margin-left: 27px;
+    width: 100%;
+  }
 }
