@@ -134,8 +134,7 @@ function populateDOM(heroName, heroPic, heroStats) {
   theCard.appendChild(theCardFront);
   theCard.appendChild(theCardBack);
   theCardFront.appendChild(pic);
-  figdiv.appendChild(imgfig);
-  imgfig.appendChild(name);
+  theCardBack.appendChild(name);
   theCardBack.appendChild(heading);
   theCardBack.appendChild(heroStats);
   //Content
@@ -150,7 +149,7 @@ document.querySelector("#addHero").addEventListener("click", () => {
   let heroName = prompt(
     "Provide the name of the hero or villain you want to add: "
   );
-  let heroPic = prompt("Give a url for your hero image: ");
+  let heroPic = prompt("Give a url for your image (320x480 works best): ");
   let rawStats = prompt(
     "Give your hero the following stats, seperated by commas, 1-100: INT,STR,SPD,DUR,POW,COM"
   );
