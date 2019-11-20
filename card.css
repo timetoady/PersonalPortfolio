@@ -9,6 +9,13 @@ main {
   object-fit: cover;
   flex-direction: row;
   align-items: center;
+  
+}
+h1, h2, h3{
+  font-family: 'Actor', sans-serif;
+}
+p {
+  font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -52,7 +59,7 @@ main {
 }
 
 .card__face--front {
-  background: rgb(189, 16, 16);
+  background: none;
 }
 
 .card__face--back {
@@ -72,4 +79,15 @@ button{
   height: 80px;
   background-color: burlywood;
   font-size: 1.5rem;
+  margin: 20px;
+}
+
+.front_image {
+  width:320px; 
+  height:480px; 
+  
+}
+
+.customStats {
+  line-height: 20px;
 }
