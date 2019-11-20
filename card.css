@@ -9,13 +9,14 @@ main {
   object-fit: cover;
   flex-direction: row;
   align-items: center;
-  
 }
-h1, h2, h3{
-  font-family: 'Actor', sans-serif;
+h1,
+h2,
+h3 {
+  font-family: "Actor", sans-serif;
 }
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .title {
@@ -77,8 +78,7 @@ p {
   transform: rotateY(180deg);
 }
 
-
-button{
+button {
   width: 250px;
   height: 80px;
   background-color: burlywood;
@@ -88,9 +88,8 @@ button{
 }
 
 .front_image {
-  width:320px; 
-  height:480px; 
-  
+  width: 320px;
+  height: 480px;
 }
 
 .customStats {
@@ -98,10 +97,10 @@ button{
 }
 
 @media (max-width: 28.75em) {
-  h1{
+  h1 {
     font-size: 2rem !important;
   }
-  .wrapper{
+  .wrapper {
     align-items: center;
     margin: 0px;
     margin-left: 27px;

@@ -20,7 +20,7 @@ main {
 header {
   display: flex;
 }
-.topTitle{
+.topTitle {
   font-size: 4rem;
 }
 
@@ -69,5 +69,5 @@ button {
   visibility: visible;
   background-color: black;
   color: yellow;
-  border: 1pt dashed white
+  border: 1pt dashed white;
 }

@@ -37,17 +37,17 @@ function toggler() {
     if (starfighterButton.textContent === "All Ships") {
       starfighterButton.textContent = "Starfighters";
       starfighterButton.innerHTML = "Starfighters";
-      showShips(shipSort)
+      showShips(shipSort);
     } else {
       starfighterButton.textContent = "All Ships";
-      showShips(starfightSort)
+      showShips(starfightSort);
     }
   });
 }
 
 var theStarfighters = toggler();
 
-let affiliationButton= document.createElement("button");
+let affiliationButton = document.createElement("button");
 affiliationButton.textContent = "Rebels";
 topHeader.appendChild(affiliationButton);
 
@@ -55,48 +55,48 @@ function toggler2() {
   affiliationButton.addEventListener("click", () => {
     if (affiliationButton.textContent === "Rebels") {
       affiliationButton.textContent = "Imperials";
-      showShips(rebels)
+      showShips(rebels);
     } else {
       affiliationButton.textContent = "Rebels";
-      showShips(empire)
+      showShips(empire);
     }
   });
 }
 
 var rebsOrEmpire = toggler2();
 
-let prompt = document.createElement('p')
-prompt.textContent = "Select a button to sort your ships!"
-prompt.setAttribute('class', 'promptClass')
+let prompt = document.createElement("p");
+prompt.textContent = "Select a button to sort your ships!";
+prompt.setAttribute("class", "promptClass");
 mainHeader.appendChild(prompt);
 
 function showShips(sorter) {
-while (mainArea.firstChild) {
-  mainArea.removeChild(mainArea.firstChild);
-}
-sorter.forEach(function(starship) {
-  let starshipDiv = document.createElement("div");
-  let name = document.createElement("h1");
-  let model = document.createElement("p");
-  let pic = document.createElement("img");
-  let starshipDesc = document.createElement("ul");
-  starshipDesc.setAttribute("class", "starshipDesc");
-  starshipDesc.setAttribute("style", "blue");
-  starshipDiv.setAttribute("class", "starshipDiv");
-  starshipDiv.appendChild(name);
-  starshipDiv.appendChild(model);
-  starshipDiv.appendChild(pic);
-  starshipDiv.appendChild(starshipDesc);
-  let shipNum = getShipNumber(starship.url);
-  mainHeader.textContent = "Starships";
-  mainHeader.setAttribute("class", "topTitle");
-  name.textContent = starship.name;
-  model.innerText = starship.model;
-  pic.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`;
-  pic.alt = "Starships";
-  starshipDesc.textContent = starship.description;
-  mainArea.appendChild(starshipDiv);
-});
+  while (mainArea.firstChild) {
+    mainArea.removeChild(mainArea.firstChild);
+  }
+  sorter.forEach(function(starship) {
+    let starshipDiv = document.createElement("div");
+    let name = document.createElement("h1");
+    let model = document.createElement("p");
+    let pic = document.createElement("img");
+    let starshipDesc = document.createElement("ul");
+    starshipDesc.setAttribute("class", "starshipDesc");
+    starshipDesc.setAttribute("style", "blue");
+    starshipDiv.setAttribute("class", "starshipDiv");
+    starshipDiv.appendChild(name);
+    starshipDiv.appendChild(model);
+    starshipDiv.appendChild(pic);
+    starshipDiv.appendChild(starshipDesc);
+    let shipNum = getShipNumber(starship.url);
+    mainHeader.textContent = "Starships";
+    mainHeader.setAttribute("class", "topTitle");
+    name.textContent = starship.name;
+    model.innerText = starship.model;
+    pic.src = `https://starwars-visualguide.com/assets/img/starships/${shipNum}.jpg`;
+    pic.alt = "Starships";
+    starshipDesc.textContent = starship.description;
+    mainArea.appendChild(starshipDiv);
+  });
 }
 
 function getShipNumber(shipURL) {

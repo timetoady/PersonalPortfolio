@@ -5,21 +5,19 @@ main {
   object-fit: cover;
   flex-direction: row;
   align-items: center;
-
 }
 
-#mainTitle{
+#mainTitle {
   text-align: center;
 }
 
-img{
+img {
   width: 90%;
 }
 
 html {
   background: black;
-  font-family: 'Poller One', cursive; 
-  
+  font-family: "Poller One", cursive;
 }
 
 .wrapper {
@@ -29,14 +27,13 @@ html {
   align-items: center;
 }
 
-.content{
+.content {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
-  width: 100%
-
+  width: 100%;
 }
 
 h1 {
@@ -53,13 +50,12 @@ ul,
 p {
   color: white;
 }
-h2{
+h2 {
   font-size: 1.4rem;
-  -webkit-transform:rotateY(180deg);
-  -moz-transform:rotateY(180deg);
-  -o-transform:rotateY(180deg);
-  -ms-transform:rotateY(180deg);
-  
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
 }
 /* Flip card settings */
 
@@ -88,7 +84,8 @@ h2{
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -109,39 +106,37 @@ h2{
 }
 
 @media (max-width: 28.75em) {
- h2{
-   font-size: 1.6rem !important;
- }
-main{
-  display:flex;
-  flex-direction: column;
-}
-.flip-card {
-  background-color: transparent;
-  min-width: 20rem  !important; 
-  height: 30rem;
-  padding: 2rem;
-  margin-bottom: 29rem !important;
-  margin-top: 1rem !important;
-  text-align: center;
-}
-.content{
-  margin-left: 15rem;
-}
- 
+  h2 {
+    font-size: 1.6rem !important;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .flip-card {
+    background-color: transparent;
+    min-width: 20rem !important;
+    height: 30rem;
+    padding: 2rem;
+    margin-bottom: 29rem !important;
+    margin-top: 1rem !important;
+    text-align: center;
+  }
+  .content {
+    margin-left: 15rem;
+  }
 }
 
 @media (max-width: 61.25em) {
-  h2{
+  h2 {
     font-size: 1.7rem;
   }
-  h1{
+  h1 {
     font-size: 3rem;
     margin: 2rem 0 3rem 0;
   }
 
-#mainTitle{
-  margin-left: 19rem;
+  #mainTitle {
+    margin-left: 19rem;
+  }
 }
-
- }

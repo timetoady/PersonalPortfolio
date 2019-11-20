@@ -1,4 +1,3 @@
-
 var request = new XMLHttpRequest();
 
 let mainArea = document.querySelector("main");
@@ -21,7 +20,7 @@ request.onload = function() {
         id.name === "Superman" ||
         id.name === "Yoda" ||
         id.name === "One Punch Man" ||
-        id.slug === "70-batman"||
+        id.slug === "70-batman" ||
         id.name === "Thanos" ||
         id.slug === "149-captain-america" ||
         id.name === "Bane" ||
@@ -41,7 +40,6 @@ request.onload = function() {
         id.name === "Doctor Doom" ||
         id.name === "Leonardo" ||
         id.name === "Lex Luthor"
-
     );
 
     favs.forEach(id => {
@@ -130,7 +128,6 @@ function populateDOM(heroName, heroPic, heroStats) {
   name.textContent = heroName;
   pic.src = heroPic;
   heading.textContent = "Stats";
-  //stats.innerText = heroStats;
 }
 
 //button info to make custome hero
