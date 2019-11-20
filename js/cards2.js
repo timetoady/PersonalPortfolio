@@ -1,14 +1,3 @@
-///use map on this to isolate just the ones I like
-
-class Hero {
-  constructor(id, name, stats) {
-    this.id = id;
-    this.name = name;
-    this.powerstats = stats;
-  }
-}
-
-const Hyperman = new Hero(732, "Hyperman", 130);
 
 var request = new XMLHttpRequest();
 
