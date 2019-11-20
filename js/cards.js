@@ -1,13 +1,13 @@
 //Adding a class to cookie cutter objects in
 
-// class Pokemon {
+// class Hero {
 //   constructor(id, name, stats) {
 //     this.id = id;
 //     this.name = name;
-//     this.base_stats = stats;
+//     this.powerstats = stats;
 //   }}
 
-// const Newkemon = new Pokemon(999, 'Ademna', 130);
+// const Hyperman = new Hero(999, 'Ademna', 130);
 
 
 // console.log(square.area); // 100
@@ -66,4 +66,5 @@ async function getAPIData(url) {
 //   let pokeOrder = document.createElement('p').textContent = pokeBack.pokeOrder
 //   pokeBack.appendChild(pokeOrder)
 // }
+
 
