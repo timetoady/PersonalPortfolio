@@ -1,5 +1,17 @@
 body {
   font-family: sans-serif;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fceabb+0,f8b500+10,ed4b00+22,f8b500+30,ed4b00+37,f8b500+43,ed4b00+53,f8b500+63,ed4b00+77,f8b500+88,fbdf93+100 */
+    background: #fceabb;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #fceabb 0%, #f8b500 10%, #ed4b00 22%, #f8b500 30%, #ed4b00 37%, #f8b500 43%, #ed4b00 53%, #f8b500 63%, #ed4b00 77%, #f8b500 88%, #fbdf93 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #fceabb 0%, #f8b500 10%, #ed4b00 22%, #f8b500 30%, #ed4b00 37%, #f8b500 43%, #ed4b00 53%, #f8b500 63%, #ed4b00 77%, #f8b500 88%, #fbdf93 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #fceabb 0%, #f8b500 10%, #ed4b00 22%, #f8b500 30%, #ed4b00 37%, #f8b500 43%, #ed4b00 53%, #f8b500 63%, #ed4b00 77%, #f8b500 88%, #fbdf93 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fceabb', endColorstr='#fbdf93', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+  
 }
 
 main {
@@ -9,18 +21,26 @@ main {
   object-fit: cover;
   flex-direction: row;
   align-items: center;
+
 }
+
 h1,
 h2,
 h3 {
   font-family: "Actor", sans-serif;
 }
+
 p {
   font-family: "Montserrat", sans-serif;
 }
 
 .title {
-  font-size: 4rem;
+  font-size: 7rem;
+  background-color: white;
+  padding: 3rem;
+  max-width: 90%;
+  margin: 0 auto;
+  border: solid 5px black
 }
 
 .wrapper {
@@ -69,12 +89,10 @@ p {
 
 .card__face--back {
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    135deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(0, 0, 9, 1) 53%,
-    rgba(29, 0, 255, 1) 100%
-  );
+  background: linear-gradient(135deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 0, 9, 1) 53%,
+      rgba(29, 0, 255, 1) 100%);
   transform: rotateY(180deg);
 }
 
@@ -99,7 +117,10 @@ button {
 @media (max-width: 28.75em) {
   h1 {
     font-size: 2rem !important;
+    padding: 1rem !important;
+    max-width: 65% !important;
   }
+
   .wrapper {
     align-items: center;
     margin: 0px;
