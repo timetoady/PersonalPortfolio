@@ -3,16 +3,16 @@ var request = new XMLHttpRequest();
 let mainArea = document.querySelector("main");
 let mainHeader = document.querySelector("h1");
 
+//Main GET function needed to simply get CORS protected API.
 request.open(
   "GET",
   "https://cdn.rawgit.com/akabab/superhero-api/0.2.0/api/all.json"
 );
-//onreadystatechange
+//Filter for favorite heroes and villains
 request.onload = function() {
   var data = JSON.parse(this.response);
   if (this.readyState === 4) {
     console.log("Status:", this.status);
-    //filter for favorite heroes and villains
     const favs = data.filter(
       id =>
         id.name === "Wolverine" ||
@@ -72,7 +72,7 @@ request.onload = function() {
       theCardBack.appendChild(name);
       theCardBack.appendChild(heading);
       theCardBack.appendChild(stats);
-      //Content
+      //Card Content
       name.textContent = id.name;
       pic.src = id.images.md;
       heading.textContent = "Stats";
@@ -82,22 +82,23 @@ request.onload = function() {
 };
 
 request.send();
+
 //JSON filter to make Powerstats appear nicely
 function jsonFilter(json) {
   return JSON.stringify(json)
     .replace(new RegExp('"', "g"), "")
     .replace(new RegExp("}", "g"), "")
     .replace(new RegExp("{", "g"), "")
-    .replace(new RegExp("intelligence", "g"), "Intelligence")
-    .replace(new RegExp("strength", "g"), "Strength")
-    .replace(new RegExp("speed", "g"), "Speed")
-    .replace(new RegExp("durability", "g"), "Durability")
-    .replace(new RegExp("power", "g"), "Power")
-    .replace(new RegExp("combat", "g"), "Combat")
+    .replace(new RegExp("intelligence:", "g"), "Intelligence: ")
+    .replace(new RegExp("strength:", "g"), "Strength: ")
+    .replace(new RegExp("speed:", "g"), "Speed: ")
+    .replace(new RegExp("durability:", "g"), "Durability: ")
+    .replace(new RegExp("power:", "g"), "Power: ")
+    .replace(new RegExp("combat:", "g"), "Combat: ")
     .replace(new RegExp(",", "g"), "\n");
 }
 
-//call dom to make customer hero
+//Call dom to make customer hero
 function populateDOM(heroName, heroPic, heroStats) {
   let theScene = document.createElement("div");
   let theCard = document.createElement("div");
@@ -105,10 +106,7 @@ function populateDOM(heroName, heroPic, heroStats) {
   let theCardBack = document.createElement("div");
   let name = document.createElement("h2");
   let heading = document.createElement("h3");
-  let stats = document.createElement("p");
   let pic = document.createElement("img");
-  let figdiv = document.createElement("figure");
-  let imgfig = document.createElement("figcaption");
   theScene.setAttribute("class", "scene");
   theCard.setAttribute("class", "card");
   theCardFront.setAttribute("class", "card__face card__face--front");
@@ -145,7 +143,7 @@ document.querySelector("#addHero").addEventListener("click", () => {
   heroStats.setAttribute("class", "customStats");
   heroStats.innerText = `Intelligence: ${joinedStats[0]}\n
                           Strength: ${joinedStats[1]}\n
-                          Speed: ${joinedStats[2]}\n
+                          Speed:  ${joinedStats[2]}\n
                           Durabilty: ${joinedStats[3]}\n
                           Power: ${joinedStats[4]}\n
                           Combat: ${joinedStats[5]}\n`;
