@@ -25,9 +25,13 @@ main {
 }
 
 h1,
-h2,
 h3 {
   font-family: "Actor", sans-serif;
+}
+
+h2{
+  font-family: 'Bangers', cursive;
+  font-size: 2.7rem;
 }
 
 p {
